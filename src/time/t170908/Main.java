@@ -22,8 +22,11 @@ public class Main {
 
     public static void main(String... args) {
         //Get input
+
         Scanner cin = new Scanner(System.in);
         StringBuilder sb = new StringBuilder();
+        Thread t = new Thread();
+        t.stop();
         while(cin.hasNextLine()){
             String str = cin.nextLine();
             if(str == null || str.trim().equals("")){
